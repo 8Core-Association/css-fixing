@@ -509,7 +509,7 @@ body {
   font-weight: var(--font-bold);
   color: var(--primary-600);
   display: block;
-  margin-bottom: var(--space-2);
+  margin: 0;
 }
 
 .seup-stat-label {
@@ -1050,7 +1050,7 @@ body {
 .seup-autocomplete-main {
   font-weight: var(--font-medium);
   color: var(--secondary-900);
-  margin-bottom: var(--space-1);
+  margin: 0 0 var(--space-1) 0;
 }
 
 .seup-autocomplete-desc {
@@ -1105,7 +1105,7 @@ i[class*=" fab fa-"] {
 .seup-tag-remove i[class*=" fas fa-"],
 .seup-modal-close i[class^="fas fa-"],
 .seup-modal-close i[class*=" fas fa-"] {
-  margin-right: 0.5rem !important;
+  margin-right: 0 !important;
 }
 
 }
