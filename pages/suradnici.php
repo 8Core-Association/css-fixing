@@ -194,7 +194,7 @@ print '<p class="seup-card-description">Pregled svih registriranih suradnika i v
 print '</div>';
 print '<div class="seup-card-actions">';
 print '<button type="button" class="seup-btn seup-btn-primary" id="noviSuradnikBtn">';
-print '<i class="fas fa-plus me-2"></i>Novi Suradnik';
+print '<i class="fas fa-plus" style="margin-right:.5rem"></i>Novi Suradnik';
 print '</button>';
 print '</div>';
 print '</div>';
@@ -245,12 +245,12 @@ function sortableHeader($field, $label, $currentSort, $currentOrder, $icon = '')
 }
 
 // Generate sortable headers with icons
-print '<th class="seup-table-th"><i class="fas fa-hashtag me-2"></i>Rb.</th>';
+print '<th class="seup-table-th"><i class="fas fa-hashtag" style="margin-right:.5rem"></i>Rb.</th>';
 print sortableHeader('naziv', 'Naziv', $sortField, $sortOrder, 'fas fa-user');
 print sortableHeader('oib', 'OIB', $sortField, $sortOrder, 'fas fa-id-card');
 print sortableHeader('telefon', 'Telefon', $sortField, $sortOrder, 'fas fa-phone');
 print sortableHeader('email', 'Email', $sortField, $sortOrder, 'fas fa-envelope');
-print '<th class="seup-table-th"><i class="fas fa-cogs me-2"></i>Akcije</th>';
+print '<th class="seup-table-th"><i class="fas fa-cogs" style="margin-right:.5rem"></i>Akcije</th>';
 print '</tr>';
 print '</thead>';
 print '<tbody class="seup-table-body">';
@@ -266,7 +266,7 @@ if (count($suradnici)) {
         
         print '<td class="seup-table-td">';
         print '<div class="seup-naziv-cell clickable-name" data-id="' . $suradnik->rowid . '" title="Kliknite za detalje">';
-        print '<i class="fas fa-user me-2"></i>';
+        print '<i class="fas fa-user" style="margin-right:.5rem"></i>';
         print htmlspecialchars($suradnik->naziv);
         print '</div>';
         print '</td>';
@@ -282,7 +282,7 @@ if (count($suradnici)) {
         print '<td class="seup-table-td">';
         if (!empty($suradnik->telefon)) {
             print '<div class="seup-contact-info">';
-            print '<i class="fas fa-phone me-2"></i>';
+            print '<i class="fas fa-phone" style="margin-right:.5rem"></i>';
             print '<a href="tel:' . htmlspecialchars($suradnik->telefon) . '">' . htmlspecialchars($suradnik->telefon) . '</a>';
             print '</div>';
         } else {
@@ -293,7 +293,7 @@ if (count($suradnici)) {
         print '<td class="seup-table-td">';
         if (!empty($suradnik->email)) {
             print '<div class="seup-contact-info">';
-            print '<i class="fas fa-envelope me-2"></i>';
+            print '<i class="fas fa-envelope" style="margin-right:.5rem"></i>';
             print '<a href="mailto:' . htmlspecialchars($suradnik->email) . '">' . htmlspecialchars($suradnik->email) . '</a>';
             print '</div>';
         } else {
@@ -326,7 +326,7 @@ if (count($suradnici)) {
     print '<h4 class="seup-empty-title">Nema registriranih suradnika</h4>';
     print '<p class="seup-empty-description">Dodajte prvog suradnika za početak rada</p>';
     print '<button type="button" class="seup-btn seup-btn-primary mt-3" id="noviSuradnikBtn2">';
-    print '<i class="fas fa-plus me-2"></i>Dodaj prvog suradnika';
+    print '<i class="fas fa-plus" style="margin-right:.5rem"></i>Dodaj prvog suradnika';
     print '</button>';
     print '</div>';
     print '</td>';
@@ -345,10 +345,10 @@ print '<span>Prikazano <strong id="visibleCount">' . count($suradnici) . '</stro
 print '</div>';
 print '<div class="seup-table-actions">';
 print '<button type="button" class="seup-btn seup-btn-secondary seup-btn-sm" id="exportCSVBtn">';
-print '<i class="fas fa-file-csv me-2"></i>Izvoz CSV';
+print '<i class="fas fa-file-csv" style="margin-right:.5rem"></i>Izvoz CSV';
 print '</button>';
 print '<button type="button" class="seup-btn seup-btn-secondary seup-btn-sm" id="exportExcelBtn">';
-print '<i class="fas fa-file-excel me-2"></i>Izvoz Excel';
+print '<i class="fas fa-file-excel" style="margin-right:.5rem"></i>Izvoz Excel';
 print '</button>';
 print '</div>';
 print '</div>';
@@ -363,7 +363,7 @@ print '</main>';
 print '<div class="seup-modal" id="detailsModal">';
 print '<div class="seup-modal-content">';
 print '<div class="seup-modal-header">';
-print '<h5 class="seup-modal-title"><i class="fas fa-user me-2"></i>Detalji Suradnika</h5>';
+print '<h5 class="seup-modal-title"><i class="fas fa-user" style="margin-right:.5rem"></i>Detalji Suradnika</h5>';
 print '<button type="button" class="seup-modal-close" id="closeDetailsModal">&times;</button>';
 print '</div>';
 print '<div class="seup-modal-body">';
@@ -376,7 +376,7 @@ print '</div>';
 print '<div class="seup-modal-footer">';
 print '<button type="button" class="seup-btn seup-btn-secondary" id="closeDetailsBtn">Zatvori</button>';
 print '<button type="button" class="seup-btn seup-btn-primary" id="editSuradnikBtn">';
-print '<i class="fas fa-edit me-2"></i>Uredi';
+print '<i class="fas fa-edit" style="margin-right:.5rem"></i>Uredi';
 print '</button>';
 print '</div>';
 print '</div>';
@@ -681,13 +681,13 @@ document.addEventListener("DOMContentLoaded", function() {
         
         // OIB
         html += '<div class="seup-detail-item">';
-        html += '<div class="seup-detail-label"><i class="fas fa-id-card me-2"></i>OIB</div>';
+        html += '<div class="seup-detail-label"><i class="fas fa-id-card" style="margin-right:.5rem"></i>OIB</div>';
         html += '<div class="seup-detail-value">' + (suradnik.oib || '—') + '</div>';
         html += '</div>';
         
         // Telefon
         html += '<div class="seup-detail-item">';
-        html += '<div class="seup-detail-label"><i class="fas fa-phone me-2"></i>Telefon</div>';
+        html += '<div class="seup-detail-label"><i class="fas fa-phone" style="margin-right:.5rem"></i>Telefon</div>';
         html += '<div class="seup-detail-value">';
         if (suradnik.telefon) {
             html += '<a href="tel:' + escapeHtml(suradnik.telefon) + '">' + escapeHtml(suradnik.telefon) + '</a>';
@@ -699,7 +699,7 @@ document.addEventListener("DOMContentLoaded", function() {
         
         // Email
         html += '<div class="seup-detail-item">';
-        html += '<div class="seup-detail-label"><i class="fas fa-envelope me-2"></i>Email</div>';
+        html += '<div class="seup-detail-label"><i class="fas fa-envelope" style="margin-right:.5rem"></i>Email</div>';
         html += '<div class="seup-detail-value">';
         if (suradnik.email) {
             html += '<a href="mailto:' + escapeHtml(suradnik.email) + '">' + escapeHtml(suradnik.email) + '</a>';
@@ -711,13 +711,13 @@ document.addEventListener("DOMContentLoaded", function() {
         
         // Adresa
         html += '<div class="seup-detail-item seup-detail-wide">';
-        html += '<div class="seup-detail-label"><i class="fas fa-map-marker-alt me-2"></i>Adresa</div>';
+        html += '<div class="seup-detail-label"><i class="fas fa-map-marker-alt" style="margin-right:.5rem"></i>Adresa</div>';
         html += '<div class="seup-detail-value">' + (suradnik.adresa || '—') + '</div>';
         html += '</div>';
         
         // Datum kreiranja
         html += '<div class="seup-detail-item">';
-        html += '<div class="seup-detail-label"><i class="fas fa-calendar me-2"></i>Datum kreiranja</div>';
+        html += '<div class="seup-detail-label"><i class="fas fa-calendar" style="margin-right:.5rem"></i>Datum kreiranja</div>';
         html += '<div class="seup-detail-value">' + suradnik.datum_kreiranja + '</div>';
         html += '</div>';
         
@@ -772,7 +772,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         messageEl.className = `seup-message-toast seup-message-${type} show`;
         messageEl.innerHTML = `
-            <i class="fas fa-${type === 'success' ? 'check-circle' : 'exclamation-triangle'} me-2"></i>
+            <i class="fas fa-${type === 'success' ? 'check-circle' : 'exclamation-triangle'}" style="margin-right:.5rem"></i>
             ${message}
         `;
 

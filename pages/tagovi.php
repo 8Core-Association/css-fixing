@@ -215,6 +215,7 @@ print '<div class="seup-tag-form-grid">';
 
 print '<div class="seup-tag-input-group">';
 print '<label for="tag" class="seup-label"><i class="fas fa-tag me-2"></i>' . $langs->trans('Tag') . '</label>';
+print '<label for="tag" class="seup-label"><i class="fas fa-tag" style="margin-right:.5rem"></i>' . $langs->trans('Tag') . '</label>';
 print '<input type="text" name="tag" id="tag" class="seup-tag-input" ';
 print 'placeholder="' . $langs->trans('UnesiNoviTag') . '" ';
 print 'value="' . $tag_name . '" required maxlength="50">';
@@ -223,6 +224,7 @@ print '<div class="seup-help-text"><i class="fas fa-info-circle"></i> ' . $langs
 // Color Picker
 print '<div class="seup-color-picker">';
 print '<div class="seup-color-picker-label"><i class="fas fa-palette me-2"></i>Odaberite boju</div>';
+print '<div class="seup-color-picker-label"><i class="fas fa-palette" style="margin-right:.5rem"></i>Odaberite boju</div>';
 print '<div class="seup-color-options">';
 
 $colors = [
@@ -247,7 +249,7 @@ print '</div>';
 
 print '<div style="display: flex; align-items: end;">';
 print '<button type="submit" class="seup-btn seup-btn-primary" id="addTagBtn">';
-print '<i class="fas fa-plus me-2"></i>' . $langs->trans('DodajTag');
+print '<i class="fas fa-plus" style="margin-right:.5rem"></i>' . $langs->trans('DodajTag');
 print '</button>';
 print '</div>';
 
@@ -506,6 +508,7 @@ document.addEventListener('DOMContentLoaded', function() {
         messageEl.className = `seup-message-toast seup-message-${type} show`;
         messageEl.innerHTML = `
             <i class="fas fa-${type === 'success' ? 'check-circle' : 'exclamation-triangle'} me-2"></i>
+            <i class="fas fa-${type === 'success' ? 'check-circle' : 'exclamation-triangle'}" style="margin-right:.5rem"></i>
             ${message}
         `;
 

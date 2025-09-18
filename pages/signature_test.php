@@ -132,10 +132,10 @@ print '<div class="seup-form">';
 // Test buttons
 print '<div class="seup-form-actions">';
 print '<button type="button" class="seup-btn seup-btn-primary" id="testDetectionBtn">';
-print '<i class="fas fa-search me-2"></i>Test Detekcije';
+print '<i class="fas fa-search" style="margin-right:.5rem"></i>Test Detekcije';
 print '</button>';
 print '<button type="button" class="seup-btn seup-btn-secondary" id="scanAllBtn">';
-print '<i class="fas fa-certificate me-2"></i>Skeniraj Sve PDF-ove';
+print '<i class="fas fa-certificate" style="margin-right:.5rem"></i>Skeniraj Sve PDF-ove';
 print '</button>';
 print '</div>';
 
@@ -225,10 +225,11 @@ document.addEventListener("DOMContentLoaded", function() {
                     const result = data.result;
                     let html = '<div class="seup-test-result-card">';
                     html += '<h4><i class="fas fa-file-pdf me-2"></i>Rezultat Detekcije</h4>';
+                    html += '<h4><i class="fas fa-file-pdf" style="margin-right:.5rem"></i>Rezultat Detekcije</h4>';
                     
                     if (result.has_signature) {
                         html += '<div class="seup-alert seup-alert-success">';
-                        html += '<i class="fas fa-certificate me-2"></i>';
+                        html += '<i class="fas fa-certificate" style="margin-right:.5rem"></i>';
                         html += '<strong>Digitalni potpis detektiran!</strong>';
                         html += '</div>';
                         
@@ -247,7 +248,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         }
                     } else {
                         html += '<div class="seup-alert seup-alert-error">';
-                        html += '<i class="fas fa-times-circle me-2"></i>';
+                        html += '<i class="fas fa-times-circle" style="margin-right:.5rem"></i>';
                         html += 'Digitalni potpis nije detektiran';
                         if (result.error) {
                             html += ': ' + result.error;
@@ -287,8 +288,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 if (data.success) {
                     let html = '<div class="seup-test-result-card">';
                     html += '<h4><i class="fas fa-chart-bar me-2"></i>Rezultat Skeniranja</h4>';
+                    html += '<h4><i class="fas fa-chart-bar" style="margin-right:.5rem"></i>Rezultat Skeniranja</h4>';
                     html += '<div class="seup-alert seup-alert-success">';
                     html += '<i class="fas fa-check-circle me-2"></i>';
+                    html += '<i class="fas fa-check-circle" style="margin-right:.5rem"></i>';
                     html += data.message;
                     html += '</div>';
                     
