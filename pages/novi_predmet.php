@@ -268,14 +268,14 @@ print '<form method="post" action="' . $_SERVER['PHP_SELF'] . '" class="seup-for
 print '<div class="seup-form-grid">';
 
 print '<div class="seup-form-group">';
-print '<label for="klasa_br" class="seup-label"><i class="fas fa-layer-group me-2"></i>Klasa broj</label>';
+print '<label for="klasa_br" class="seup-label"><i class="fas fa-layer-group" style="margin-right:.5rem"></i>Klasa broj</label>';
 print '<select name="klasa_br" id="klasa_br" class="seup-select" required>';
 print $klasaOptions;
 print '</select>';
 print '</div>';
 
 print '<div class="seup-form-group">';
-print '<label for="sadrzaj" class="seup-label"><i class="fas fa-list me-2"></i>Sadržaj</label>';
+print '<label for="sadrzaj" class="seup-label"><i class="fas fa-list" style="margin-right:.5rem"></i>Sadržaj</label>';
 print '<select name="sadrzaj" id="sadrzaj" class="seup-select" required>';
 print '<option value="">' . $langs->trans("Odaberi Sadrzaj") . '</option>';
 print '</select>';
@@ -286,14 +286,14 @@ print '</div>'; // seup-form-grid
 print '<div class="seup-form-grid">';
 
 print '<div class="seup-form-group">';
-print '<label for="dosjeBroj" class="seup-label"><i class="fas fa-folder me-2"></i>Dosje broj</label>';
+print '<label for="dosjeBroj" class="seup-label"><i class="fas fa-folder" style="margin-right:.5rem"></i>Dosje broj</label>';
 print '<select name="dosjeBroj" id="dosjeBroj" class="seup-select" required>';
 print '<option value="">' . $langs->trans("Odaberi Dosje Broj") . '</option>';
 print '</select>';
 print '</div>';
 
 print '<div class="seup-form-group">';
-print '<label for="zaposlenik" class="seup-label"><i class="fas fa-user me-2"></i>Zaposlenik</label>';
+print '<label for="zaposlenik" class="seup-label"><i class="fas fa-user" style="margin-right:.5rem"></i>Zaposlenik</label>';
 print '<select class="seup-select" id="zaposlenik" name="zaposlenik" required>';
 print $zaposlenikOptions;
 print '</select>';
@@ -303,13 +303,13 @@ print '</div>'; // seup-form-grid
 
 // Pošiljatelj section
 print '<div class="seup-form-group">';
-print '<label class="seup-label"><i class="fas fa-paper-plane me-2"></i>Pošiljatelj</label>';
+print '<label class="seup-label"><i class="fas fa-paper-plane" style="margin-right:.5rem"></i>Pošiljatelj</label>';
 print '<div class="seup-posiljatelj-buttons">';
 print '<button type="button" class="seup-btn seup-btn-secondary" id="poslaoBtn" data-selected-id="" data-selected-name="">';
-print '<i class="fas fa-user me-2"></i>Poslao';
+print '<i class="fas fa-user" style="margin-right:.5rem"></i>Poslao';
 print '</button>';
 print '<button type="button" class="seup-btn seup-btn-primary" id="zaprimljenoBtn">';
-print '<i class="fas fa-calendar me-2"></i>Zaprimljeno';
+print '<i class="fas fa-calendar" style="margin-right:.5rem"></i>Zaprimljeno';
 print '</button>';
 print '</div>';
 print '<input type="hidden" name="posiljatelj_id" id="posiljatelj_id">';
@@ -330,13 +330,13 @@ print '</div>';
 print '<div class="seup-form">';
 
 print '<div class="seup-form-group">';
-print '<label for="naziv" class="seup-label"><i class="fas fa-heading me-2"></i>Naziv predmeta</label>';
+print '<label for="naziv" class="seup-label"><i class="fas fa-heading" style="margin-right:.5rem"></i>Naziv predmeta</label>';
 print '<textarea class="seup-textarea" id="naziv" name="naziv" rows="4" maxlength="500" placeholder="Unesite naziv predmeta (maksimalno 500 znakova)"></textarea>';
 print '<div class="seup-char-counter" id="charCounter">0 / 500</div>';
 print '</div>';
 
 print '<div class="seup-form-group">';
-print '<label for="datumOtvaranja" class="seup-label"><i class="fas fa-calendar me-2"></i>Datum otvaranja predmeta</label>';
+print '<label for="datumOtvaranja" class="seup-label"><i class="fas fa-calendar" style="margin-right:.5rem"></i>Datum otvaranja predmeta</label>';
 print '<button type="button" class="seup-date-btn" id="datumOtvaranjaBtn">';
 print '<i class="fas fa-calendar"></i> Odaberi datum';
 print '</button>';
@@ -345,7 +345,7 @@ print '<div class="seup-help-text"><i class="fas fa-info-circle"></i> Ostavite p
 print '</div>';
 
 print '<div class="seup-form-group">';
-print '<label class="seup-label"><i class="fas fa-tags me-2"></i>Oznake</label>';
+print '<label class="seup-label"><i class="fas fa-tags" style="margin-right:.5rem"></i>Oznake</label>';
 print '<button type="button" class="seup-tags-btn" id="tagsBtn">';
 print '<i class="fas fa-tags"></i> Odaberi oznake';
 print '</button>';
@@ -425,7 +425,7 @@ print '</div>';
 print '<div class="seup-modal" id="poslaoModal">';
 print '<div class="seup-modal-content">';
 print '<div class="seup-modal-header">';
-print '<h5 class="seup-modal-title"><i class="fas fa-user me-2"></i>Odaberi Pošiljatelja</h5>';
+print '<h5 class="seup-modal-title"><i class="fas fa-user" style="margin-right:.5rem"></i>Odaberi Pošiljatelja</h5>';
 print '<button type="button" class="seup-modal-close" id="closePoslaoModal">&times;</button>';
 print '</div>';
 print '<div class="seup-modal-body">';
@@ -442,7 +442,7 @@ print '</div>';
 print '<div class="seup-modal-footer">';
 print '<button type="button" class="seup-btn seup-btn-secondary" id="cancelPoslao">Odustani</button>';
 print '<button type="button" class="seup-btn seup-btn-primary" id="confirmPoslao" disabled>';
-print '<i class="fas fa-check me-2"></i>Odaberi';
+print '<i class="fas fa-check" style="margin-right:.5rem"></i>Odaberi';
 print '</button>';
 print '</div>';
 print '</div>';
@@ -859,7 +859,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById('confirmPoslao').addEventListener('click', function() {
         if (selectedPosiljatelj) {
             const poslaoBtn = document.getElementById('poslaoBtn');
-            poslaoBtn.innerHTML = `<i class="fas fa-user me-2"></i>${selectedPosiljatelj.naziv}`;
+            poslaoBtn.innerHTML = `<i class="fas fa-user" style="margin-right:.5rem"></i>${selectedPosiljatelj.naziv}`;
             poslaoBtn.classList.add('selected');
             poslaoBtn.dataset.selectedId = selectedPosiljatelj.id;
             poslaoBtn.dataset.selectedName = selectedPosiljatelj.naziv;
@@ -895,7 +895,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const date = new Date(selectedDate);
             const formattedDate = `${date.getDate().toString().padStart(2, '0')}.${(date.getMonth() + 1).toString().padStart(2, '0')}.${date.getFullYear()}`;
             
-            currentDateTarget.button.innerHTML = `<i class="fas fa-calendar me-2"></i>${formattedDate}`;
+            currentDateTarget.button.innerHTML = `<i class="fas fa-calendar" style="margin-right:.5rem"></i>${formattedDate}`;
             currentDateTarget.button.classList.add('selected');
             currentDateTarget.input.value = selectedDate;
         }
@@ -1143,12 +1143,12 @@ document.addEventListener("DOMContentLoaded", function() {
                     document.getElementById('datumOtvaranja').value = '';
                     
                     // Reset zaprimljeno button
-                    document.getElementById('zaprimljenoBtn').innerHTML = '<i class="fas fa-calendar me-2"></i>Zaprimljeno';
+                    document.getElementById('zaprimljenoBtn').innerHTML = '<i class="fas fa-calendar" style="margin-right:.5rem"></i>Zaprimljeno';
                     document.getElementById('zaprimljenoBtn').classList.remove('selected');
                     document.getElementById('datumZaprimljeno').value = '';
                     
                     // Reset poslao button
-                    document.getElementById('poslaoBtn').innerHTML = '<i class="fas fa-user me-2"></i>Poslao';
+                    document.getElementById('poslaoBtn').innerHTML = '<i class="fas fa-user" style="margin-right:.5rem"></i>Poslao';
                     document.getElementById('poslaoBtn').classList.remove('selected');
                     document.getElementById('poslaoBtn').dataset.selectedId = '';
                     document.getElementById('poslaoBtn').dataset.selectedName = '';

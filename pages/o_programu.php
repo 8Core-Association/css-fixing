@@ -247,6 +247,7 @@ print '</div>';
 
 print '<div class="seup-copyright-info">';
 print '<h4><i class="fas fa-copyright me-2"></i>Autorska Prava</h4>';
+print '<h4><i class="fas fa-copyright" style="margin-right:.5rem"></i>Autorska Prava</h4>';
 print '<div class="seup-authors">';
 print '<div class="seup-author">';
 print '<div class="seup-author-avatar"><i class="fas fa-user"></i></div>';
@@ -269,6 +270,7 @@ print '</div>';
 
 print '<div class="seup-company-info">';
 print '<h4><i class="fas fa-building me-2"></i>8Core Association</h4>';
+print '<h4><i class="fas fa-building" style="margin-right:.5rem"></i>8Core Association</h4>';
 print '<div class="seup-contact-grid">';
 print '<div class="seup-contact-item">';
 print '<i class="fas fa-globe"></i>';
@@ -291,6 +293,7 @@ print '</div>';
 
 print '<div class="seup-legal-notice">';
 print '<h4><i class="fas fa-gavel me-2"></i>Pravne Napomene</h4>';
+print '<h4><i class="fas fa-gavel" style="margin-right:.5rem"></i>Pravne Napomene</h4>';
 print '<div class="seup-legal-content">';
 print '<p><strong>Zabranjeno je:</strong></p>';
 print '<ul>';
@@ -331,7 +334,7 @@ print '<div class="seup-support-icon"><i class="fas fa-question-circle"></i></di
 print '<h4>Tehnička Podrška</h4>';
 print '<p>Za tehnička pitanja i probleme s modulom</p>';
 print '<a href="mailto:info@8core.hr?subject=SEUP%20Tehnička%20Podrška" class="seup-support-btn">';
-print '<i class="fas fa-envelope me-2"></i>Kontaktiraj podršku';
+print '<i class="fas fa-envelope" style="margin-right:.5rem"></i>Kontaktiraj podršku';
 print '</a>';
 print '</div>';
 
@@ -340,7 +343,7 @@ print '<div class="seup-support-icon"><i class="fas fa-key"></i></div>';
 print '<h4>Licenciranje</h4>';
 print '<p>Za zahtjeve za dodatnim licencama</p>';
 print '<a href="mailto:info@8core.hr?subject=SEUP%20Licenciranje" class="seup-support-btn">';
-print '<i class="fas fa-handshake me-2"></i>Zahtjev za licencu';
+print '<i class="fas fa-handshake" style="margin-right:.5rem"></i>Zahtjev za licencu';
 print '</a>';
 print '</div>';
 
@@ -349,7 +352,7 @@ print '<div class="seup-support-icon"><i class="fas fa-cogs"></i></div>';
 print '<h4>Prilagodbe</h4>';
 print '<p>Za custom razvoj i prilagodbe</p>';
 print '<a href="mailto:info@8core.hr?subject=SEUP%20Custom%20Razvoj" class="seup-support-btn">';
-print '<i class="fas fa-code me-2"></i>Zatraži ponudu';
+print '<i class="fas fa-code" style="margin-right:.5rem"></i>Zatraži ponudu';
 print '</a>';
 print '</div>';
 

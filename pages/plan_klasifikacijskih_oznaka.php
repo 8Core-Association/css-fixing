@@ -157,7 +157,7 @@ print '<p class="seup-card-description">Upravljanje hijerarhijskim sustavom klas
 print '</div>';
 print '<div class="seup-card-actions">';
 print '<button type="button" class="seup-btn seup-btn-primary" id="novaOznakaBtn">';
-print '<i class="fas fa-plus me-2"></i>Nova Oznaka';
+print '<i class="fas fa-plus" style="margin-right:.5rem"></i>Nova Oznaka';
 print '</button>';
 print '</div>';
 print '</div>';
@@ -295,7 +295,7 @@ if (count($oznake)) {
     print '<h4 class="seup-empty-title">Nema klasifikacijskih oznaka</h4>';
     print '<p class="seup-empty-description">Dodajte novu klasifikacijsku oznaku za početak</p>';
     print '<button type="button" class="seup-btn seup-btn-primary mt-3" id="novaOznakaBtn2">';
-    print '<i class="fas fa-plus me-2"></i>Dodaj prvu oznaku';
+    print '<i class="fas fa-plus" style="margin-right:.5rem"></i>Dodaj prvu oznaku';
     print '</button>';
     print '</div>';
     print '</td>';
@@ -314,10 +314,10 @@ print '<span>Prikazano <strong>' . count($oznake) . '</strong> klasifikacijskih 
 print '</div>';
 print '<div class="seup-table-actions">';
 print '<button type="button" class="seup-btn seup-btn-secondary seup-btn-sm">';
-print '<i class="fas fa-download me-2"></i>Izvoz Excel';
+print '<i class="fas fa-download" style="margin-right:.5rem"></i>Izvoz Excel';
 print '</button>';
 print '<button type="button" class="seup-btn seup-btn-secondary seup-btn-sm">';
-print '<i class="fas fa-print me-2"></i>Ispis';
+print '<i class="fas fa-print" style="margin-right:.5rem"></i>Ispis';
 print '</button>';
 print '</div>';
 print '</div>';
