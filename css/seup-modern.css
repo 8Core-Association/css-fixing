@@ -1105,7 +1105,7 @@ i[class*=" fab fa-"] {
 .seup-tag-remove i[class*=" fas fa-"],
 .seup-modal-close i[class^="fas fa-"],
 .seup-modal-close i[class*=" fas fa-"] {
-  margin-right: 0 !important;
+  margin-right: 0.5rem !important;
 }
 
 }

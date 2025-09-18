@@ -312,7 +312,7 @@
 .seup-empty-description {
   font-size: var(--text-sm);
   color: var(--secondary-500);
-  margin: 0;
+  margin: 0.5rem;
 }
 
 /* Table Footer */
@@ -495,14 +495,14 @@
 }
 
 .seup-details-basic h4 {
-  margin: 0 0 var(--space-1) 0;
+  margin: 0.5rem 0 var(--space-1) 0;
   color: var(--success-800);
   font-size: var(--text-xl);
   font-weight: var(--font-semibold);
 }
 
 .seup-contact-person {
-  margin: 0;
+  margin: 0.5rem;
   color: var(--success-700);
   font-size: var(--text-sm);
   font-style: italic;
@@ -740,3 +740,4 @@
 .seup-table-row.filtered-in {
   animation: fadeInUp 0.3s ease-out;
 }
+  margin: 0.5rem;

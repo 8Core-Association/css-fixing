@@ -253,14 +253,14 @@
 }
 
 .seup-akt-info-content h6 {
-  margin: 0 0 var(--space-1) 0;
+  margin: 0.5rem 0 var(--space-1) 0;
   color: var(--primary-800);
   font-size: var(--text-base);
   font-weight: var(--font-semibold);
 }
 
 .seup-akt-info-content p {
-  margin: 0;
+  margin: 0.5rem;
   color: var(--primary-700);
   font-size: var(--text-sm);
 }
@@ -291,14 +291,14 @@
 }
 
 .seup-prilog-info-content h6 {
-  margin: 0 0 var(--space-1) 0;
+  margin: 0.5rem 0 var(--space-1) 0;
   color: var(--success-800);
   font-size: var(--text-base);
   font-weight: var(--font-semibold);
 }
 
 .seup-prilog-info-content p {
-  margin: 0;
+  margin: 0.5rem;
   color: var(--success-700);
   font-size: var(--text-sm);
 }

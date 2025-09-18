@@ -246,13 +246,13 @@
 
 #poslaoModal .seup-search-input-wrapper {
   position: relative;
-}
+  margin: 0.5rem 0 var(--space-1) 0;
 
 #poslaoModal .seup-search-icon {
   position: absolute;
   left: var(--space-3);
   top: 50%;
-  transform: translateY(-50%);
+  margin: 0.5rem;
   color: var(--secondary-400);
   font-size: var(--text-sm);
 }
@@ -279,7 +279,7 @@
   padding: var(--space-3);
   border: 1px solid var(--neutral-300);
   border-radius: var(--radius-lg);
-  background: white;
+  margin: 0.5rem 0 var(--space-1) 0;
   color: var(--secondary-700);
   font-size: var(--text-base);
   cursor: pointer;
@@ -423,7 +423,7 @@
 .seup-modal-title {
   font-size: var(--text-lg);
   font-weight: var(--font-semibold);
-  margin: 0;
+  margin: 0.5rem;
 }
 
 .seup-modal-close {
