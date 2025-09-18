@@ -391,7 +391,7 @@ print '</select></div></div>';
 print '<div class="seup-form-grid"><div class="seup-form-group"><label class="seup-label">Vrijeme čuvanja</label><select id="vrijeme_cuvanja" name="vrijeme_cuvanja" class="seup-select" required><option value="permanent">Trajno</option>';
 for ($g=1;$g<=10;$g++) print '<option value="'.$g.'">'.$g.' godina</option>';
 print '</select></div><div class="seup-form-group"><label class="seup-label">Opis klasifikacije</label><textarea id="opis_klasifikacije" name="opis_klasifikacije" class="seup-textarea" rows="3"></textarea></div></div>';
-print '<div class="seup-form-actions"><button type="submit" name="action_klasifikacija" value="add" class="seup-btn seup-btn-primary"><i class="fas fa-plus"></i> Dodaj</button><button type="submit" name="action_klasifikacija" value="update" class="seup-btn seup-btn-secondary"><i class="fas fa-edit"></i> Ažuriraj</button><button type="submit" name="action_klasifikacija" value="delete" class="seup-btn seup-btn-danger"><i class="fas fa-trash"></i> Obriši</button></div>';
+print '<div class="seup-form-actions"><button type="submit" name="action_klasifikacija" value="add" class="seup-btn seup-btn-primary"><i class="fas fa-plus" style="margin-right:.5rem"></i>Dodaj</button><button type="submit" name="action_klasifikacija" value="update" class="seup-btn seup-btn-secondary"><i class="fas fa-edit" style="margin-right:.5rem"></i>Ažuriraj</button><button type="submit" name="action_klasifikacija" value="delete" class="seup-btn seup-btn-danger"><i class="fas fa-trash" style="margin-right:.5rem"></i>Obriši</button></div>';
 print '</form></div>';
 
 // === Card: Interne oznake korisnika (isti kao tvoj) ===
@@ -402,7 +402,7 @@ print '<div class="seup-form-grid"><div class="seup-form-group"><label class="se
 foreach ($listUsers as $u) { print '<option value="'.htmlspecialchars($u->getFullName($langs)).'">'.htmlspecialchars($u->getFullName($langs)).'</option>'; }
 print '</select></div><div class="seup-form-group"><label class="seup-label">Redni broj (0-99)</label><input type="number" name="redni_broj" id="redni_broj" class="seup-input" min="0" max="99" required></div></div>';
 print '<div class="seup-form-group"><label class="seup-label">Radno mjesto</label><input type="text" name="radno_mjesto_korisnika" id="radno_mjesto_korisnika" class="seup-input" required></div>';
-print '<div class="seup-form-actions"><button type="submit" name="action_oznaka" value="add" class="seup-btn seup-btn-primary"><i class="fas fa-plus"></i> Dodaj</button><button type="submit" name="action_oznaka" value="update" class="seup-btn seup-btn-secondary"><i class="fas fa-edit"></i> Ažuriraj</button><button type="submit" name="action_oznaka" value="delete" class="seup-btn seup-btn-danger"><i class="fas fa-trash"></i> Obriši</button></div>';
+print '<div class="seup-form-actions"><button type="submit" name="action_oznaka" value="add" class="seup-btn seup-btn-primary"><i class="fas fa-plus" style="margin-right:.5rem"></i>Dodaj</button><button type="submit" name="action_oznaka" value="update" class="seup-btn seup-btn-secondary"><i class="fas fa-edit" style="margin-right:.5rem"></i>Ažuriraj</button><button type="submit" name="action_oznaka" value="delete" class="seup-btn seup-btn-danger"><i class="fas fa-trash" style="margin-right:.5rem"></i>Obriši</button></div>';
 print '</form></div>';
 
 // === Card: Oznaka ustanove (isti kao tvoj) ===
@@ -413,7 +413,7 @@ print '<input type="hidden" name="action_ustanova" id="form-action" value="'.($p
 print '<div id="messageDiv" class="seup-alert d-none" role="alert"></div>';
 print '<div class="seup-form-grid"><div class="seup-form-group"><label class="seup-label">Oznaka (format: 0000-0-0)</label><input type="text" id="code_ustanova" name="code_ustanova" class="seup-input" pattern="^\\d{4}-\\d-\\d$" placeholder="0000-0-0" required value="'.($podaci_postoje?htmlspecialchars($podaci_postoje->code_ustanova):'').'"></div>';
 print '<div class="seup-form-group"><label class="seup-label">Naziv ustanove</label><input type="text" id="name_ustanova" name="name_ustanova" class="seup-input" placeholder="Unesite naziv ustanove" required value="'.($podaci_postoje?htmlspecialchars($podaci_postoje->name_ustanova):'').'"></div></div>';
-print '<div class="seup-form-actions"><button type="submit" id="ustanova-submit" class="seup-btn seup-btn-primary"><i class="fas fa-'.($podaci_postoje?'edit':'plus').'"></i> '.($podaci_postoje?'Ažuriraj':'Dodaj').'</button></div>';
+print '<div class="seup-form-actions"><button type="submit" id="ustanova-submit" class="seup-btn seup-btn-primary"><i class="fas fa-'.($podaci_postoje?'edit':'plus').'" style="margin-right:.5rem"></i>'.($podaci_postoje?'Ažuriraj':'Dodaj').'</button></div>';
 print '</form></div>';
 
 // === Card: Treće Osobe – PREBAČENO NA a_posiljatelji + EMAIL ===
@@ -436,7 +436,7 @@ print '<div class="seup-form-group"><label class="seup-label">Kontakt telefon</l
 print '<div class="seup-form-group"><label class="seup-label">E-mail</label><input type="email" name="to_email" class="seup-input" value="'.$V($E?$E->email:'').'"></div>';
 print '</div>';
 print '<div class="seup-form-actions">';
-print '<button type="submit" name="action_treca_osoba" value="'.($E?'update':'add').'" class="seup-btn seup-btn-'.($E?'secondary':'primary').'"><i class="fas fa-'.($E?'edit':'plus').'"></i> '.($E?'Ažuriraj':'Dodaj').'</button>'; print ' <button type="reset" class="seup-btn seup-btn-secondary" id="btnPonisti">Poništi</button>';
+print '<button type="submit" name="action_treca_osoba" value="'.($E?'update':'add').'" class="seup-btn seup-btn-'.($E?'secondary':'primary').'"><i class="fas fa-'.($E?'edit':'plus').'" style="margin-right:.5rem"></i>'.($E?'Ažuriraj':'Dodaj').'</button>'; print ' <button type="reset" class="seup-btn seup-btn-secondary" id="btnPonisti">Poništi</button>';
 if ($E) print ' <a class="seup-btn" href="'.$_SERVER['PHP_SELF'].'?tab=trece_osobe">Odustani</a>';
 print '</div>';
 print '</form>';
@@ -461,7 +461,7 @@ print '<div class="seup-form-group"><label class="seup-label">Vrsta Gradiva *</l
 print '</div>';
 print '<div class="seup-form-group"><label class="seup-label">Opisi/Napomene</label><textarea name="ag_opisi_napomene" class="seup-textarea" rows="4" placeholder="Unesite opise ili napomene...">'.$V($A?$A->opisi_napomene:'').'</textarea></div>';
 print '<div class="seup-form-actions">';
-print '<button type="submit" name="action_arhivska_gradiva" value="'.($A?'update':'add').'" class="seup-btn seup-btn-'.($A?'secondary':'primary').'"><i class="fas fa-'.($A?'edit':'plus').'"></i> '.($A?'Ažuriraj':'Dodaj').'</button>';
+print '<button type="submit" name="action_arhivska_gradiva" value="'.($A?'update':'add').'" class="seup-btn seup-btn-'.($A?'secondary':'primary').'"><i class="fas fa-'.($A?'edit':'plus').'" style="margin-right:.5rem"></i>'.($A?'Ažuriraj':'Dodaj').'</button>';
 print ' <button type="reset" class="seup-btn seup-btn-secondary" id="btnPonistiArh">Poništi</button>';
 if ($A) print ' <a class="seup-btn" href="'.$_SERVER['PHP_SELF'].'?tab=arhivska_gradiva">Odustani</a>';
 print '</div>';
