@@ -101,7 +101,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
         exit;
     }
-}
+    
     if ($action === 'delete_gradivo') {
         header('Content-Type: application/json');
         ob_end_clean();
@@ -132,6 +132,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
         exit;
     }
+}
 
 // Fetch sorting parameters
 $sortField = GETPOST('sort', 'aZ09') ?: 'oznaka';
@@ -215,7 +216,7 @@ print '<p class="seup-card-description">Pregled svih registriranih vrsta arhivsk
 print '</div>';
 print '<div class="seup-card-actions">';
 print '<button type="button" class="seup-btn seup-btn-primary" id="novoGradivoBtn">';
-print '<i class="fas fa-plus me-2"></i>Novo Gradivo';
+print '<i class="fas fa-plus" style="margin-right:.5rem"></i>Novo Gradivo';
 print '</button>';
 print '</div>';
 print '</div>';
@@ -271,7 +272,7 @@ print sortableHeader('oznaka', 'Oznaka', $sortField, $sortOrder, 'fas fa-tag');
 print sortableHeader('vrsta_gradiva', 'Vrsta Gradiva', $sortField, $sortOrder, 'fas fa-archive');
 print '<th class="seup-table-th"><i class="fas fa-align-left me-2"></i>Opisi/Napomene</th>';
 print sortableHeader('datec', 'Datum Kreiranja', $sortField, $sortOrder, 'fas fa-calendar');
-print '<th class="seup-table-th"><i class="fas fa-cogs me-2"></i>Akcije</th>';
+print '<th class="seup-table-th"><i class="fas fa-cogs" style="margin-right:.5rem"></i>Akcije</th>';
 print '</tr>';
 print '</thead>';
 print '<tbody class="seup-table-body">';
@@ -341,7 +342,7 @@ if (count($gradiva)) {
     print '<h4 class="seup-empty-title">Nema registriranih vrsta arhivskog gradiva</h4>';
     print '<p class="seup-empty-description">Dodajte prvu vrstu gradiva za početak rada</p>';
     print '<button type="button" class="seup-btn seup-btn-primary mt-3" id="novoGradivoBtn2">';
-    print '<i class="fas fa-plus me-2"></i>Dodaj prvo gradivo';
+    print '<i class="fas fa-plus" style="margin-right:.5rem"></i>Dodaj prvo gradivo';
     print '</button>';
     print '</div>';
     print '</td>';
@@ -375,7 +376,7 @@ print '</main>';
 print '<div class="seup-modal" id="detailsModal">';
 print '<div class="seup-modal-content">';
 print '<div class="seup-modal-header">';
-print '<h5 class="seup-modal-title"><i class="fas fa-archive me-2"></i>Detalji Arhivskog Gradiva</h5>';
+print '<h5 class="seup-modal-title"><i class="fas fa-archive" style="margin-right:.5rem"></i>Detalji Arhivskog Gradiva</h5>';
 print '<button type="button" class="seup-modal-close" id="closeDetailsModal">&times;</button>';
 print '</div>';
 print '<div class="seup-modal-body">';
@@ -388,7 +389,7 @@ print '</div>';
 print '<div class="seup-modal-footer">';
 print '<button type="button" class="seup-btn seup-btn-secondary" id="closeDetailsBtn">Zatvori</button>';
 print '<button type="button" class="seup-btn seup-btn-primary" id="editGradivoBtn">';
-print '<i class="fas fa-edit me-2"></i>Uredi';
+print '<i class="fas fa-edit" style="margin-right:.5rem"></i>Uredi';
 print '</button>';
 print '</div>';
 print '</div>';
@@ -398,7 +399,7 @@ print '</div>';
 print '<div class="seup-modal" id="deleteModal">';
 print '<div class="seup-modal-content">';
 print '<div class="seup-modal-header">';
-print '<h5 class="seup-modal-title"><i class="fas fa-trash me-2"></i>Brisanje Arhivskog Gradiva</h5>';
+print '<h5 class="seup-modal-title"><i class="fas fa-trash" style="margin-right:.5rem"></i>Brisanje Arhivskog Gradiva</h5>';
 print '<button type="button" class="seup-modal-close" id="closeDeleteModal">&times;</button>';
 print '</div>';
 print '<div class="seup-modal-body">';
@@ -693,20 +694,20 @@ document.addEventListener("DOMContentLoaded", function() {
         
         // ID
         html += '<div class="seup-detail-item">';
-        html += '<div class="seup-detail-label"><i class="fas fa-hashtag me-2"></i>ID</div>';
+        html += '<div class="seup-detail-label"><i class="fas fa-hashtag" style="margin-right:.5rem"></i>ID</div>';
         html += '<div class="seup-detail-value">' + gradivo.rowid + '</div>';
         html += '</div>';
         
         // Datum kreiranja
         html += '<div class="seup-detail-item">';
-        html += '<div class="seup-detail-label"><i class="fas fa-calendar me-2"></i>Datum kreiranja</div>';
+        html += '<div class="seup-detail-label"><i class="fas fa-calendar" style="margin-right:.5rem"></i>Datum kreiranja</div>';
         html += '<div class="seup-detail-value">' + gradivo.datum_kreiranja + '</div>';
         html += '</div>';
         
         // Opisi/Napomene (wide)
         if (gradivo.opisi_napomene) {
             html += '<div class="seup-detail-item seup-detail-wide">';
-            html += '<div class="seup-detail-label"><i class="fas fa-align-left me-2"></i>Opisi/Napomene</div>';
+            html += '<div class="seup-detail-label"><i class="fas fa-align-left" style="margin-right:.5rem"></i>Opisi/Napomene</div>';
             html += '<div class="seup-detail-value">' + escapeHtml(gradivo.opisi_napomene) + '</div>';
             html += '</div>';
         }
