@@ -1089,28 +1089,23 @@ body {
   }
 
 /* Icon spacing - ensure all FontAwesome icons have consistent right margin */
-i[class^="fa-"],
-i[class*=" fa-"] {
+i[class^="fas fa-"],
+i[class*=" fas fa-"],
+i[class^="far fa-"],
+i[class*=" far fa-"],
+i[class^="fab fa-"],
+i[class*=" fab fa-"] {
   margin-right: 0.5rem !important;
 }
 
-/* Specific overrides for buttons and table cells */
-.seup-btn i[class^="fa-"],
-.seup-btn i[class*=" fa-"],
-th i[class^="fa-"],
-th i[class*=" fa-"],
-td i[class^="fa-"],
-td i[class*=" fa-"] {
-  margin-right: 0.5rem !important;
-}
-
-/* Remove margin for icons that are standalone or last in container */
-.seup-action-btn i[class^="fa-"],
-.seup-action-btn i[class*=" fa-"],
-.seup-tag-remove i[class^="fa-"],
-.seup-tag-remove i[class*=" fa-"] {
+/* Remove margin for icons that are standalone (no text after) */
+.seup-action-btn i[class^="fas fa-"],
+.seup-action-btn i[class*=" fas fa-"],
+.seup-tag-remove i[class^="fas fa-"],
+.seup-tag-remove i[class*=" fas fa-"],
+.seup-modal-close i[class^="fas fa-"],
+.seup-modal-close i[class*=" fas fa-"] {
   margin-right: 0 !important;
 }
-
 
 }
